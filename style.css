@@ -1,71 +1,122 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  user-select: none;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    height: 8vh;
-    background-color: rgb(89, 98, 116);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-size: 20px;
+  width: 100vw;
+  height: 8vh;
+  background-color: rgb(63, 63, 63);
+}
+
+.navbar div {
+  transition: 0.2s;
+}
+
+.navbar .logo {
+  color: rgb(154, 208, 255);
+}
+
+.navbar .nav-item1:hover {
+  font-size: 24px;
+  color: aliceblue;
+}
+
+.navbar .nav-item2:hover {
+  font-size: 24px;
+}
+
+.navbar .nav-item3:hover {
+  font-size: 24px;
+}
+
+.navbar .nav-item4:hover {
+  font-size: 24px;
+}
+
+.navbar .nav-item5:hover {
+  font-size: 24px;
+}
+
+.navbar .nav-item6:hover {
+  font-size: 24px;
 }
 
 .slider {
-    width: 300vw;
-    height: 80vh;
-    display: flex;
-    animation: animate 8s infinite;
+  width: 300vw;
+  height: 92vh;
+  display: flex;
+  animation: slide 8s infinite;
 }
 
 .slider .slide {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    padding-left: 10vw;
-    align-items: center;
-    transition: 0.5s;
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-left: 10vw;
+  transition: 0.5s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 180px;
+  color: white;
 }
 
 .slider .slide1 {
-    background-image: url("./images/1.jpg");
+  background-image: url("./images/1.jpg");
 }
 
 .slider .slide2 {
-    background-image: url("./images/2.jpg");
+  background-image: url("./images/2.jpg");
 }
 
 .slider .slide3 {
-    background-image: url("./images/3.jpg");
+  background-image: url("./images/3.jpg");
 }
 
-@keyframes animate {
-    0% {
-        transform: translate(0);
-    }
-    16.66% {
-        transform: translate(0);
-    }
-    33.33% {
-        transform: translate(-100vw);
-    }
-    50% {
-        transform: translate(-100vw);
-    }
-    66.66% {
-        transform: translate(-200vw);
-    }
-    83.33% {
-        transform: translate(-200vw);
-    }
-    100% {
-        transform: translate(0);
-    }
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  16.66% {
+    transform: translate(0);
+  }
+  33.33% {
+    transform: translate(-100vw);
+  }
+  50% {
+    transform: translate(-100vw);
+  }
+  66.66% {
+    transform: translate(-200vw);
+  }
+  83.33% {
+    transform: translate(-200vw);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info embed {
+  margin: 50px;
 }
