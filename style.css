@@ -11,6 +11,7 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+  background-image: url("./images/bg.jpg");
 }
 
 .navbar {
@@ -21,7 +22,7 @@ body {
   font-size: 20px;
   width: 100vw;
   height: 8vh;
-  background-color: rgb(63, 63, 63);
+  background-color: rgba(0, 0, 0, 0.82);
 }
 
 .navbar div {
@@ -53,6 +54,8 @@ body {
   width: 300vw;
   height: 92vh;
   display: flex;
+  transform: translateY(-8vh);
+  z-index: -1;
   animation: slide 8s infinite;
 }
 
