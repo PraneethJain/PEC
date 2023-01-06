@@ -1,7 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Roboto;
   user-select: none;
 }
 
